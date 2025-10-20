@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #FF5B2E;
+    --second-color: #000958;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -11,6 +16,7 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+/* Common */
 h1,
 h2,
 h3,
@@ -26,4 +32,71 @@ select,
 button {
     font-size: inherit;
     font-family: inherit;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn {
+    --height: 56px;
+
+    display: inline-block;
+    height: var(--height);
+    line-height: var(--height);
+    text-align: center;
+    min-width: 130px;
+    border-radius: 999px;
+
+    color: var(--second-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    padding: 26px 0;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__link,
+.header-action__link {
+    padding: 8px 18px;
+    color: #5E6085;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.navbar__active,
+.navbar__link:hover {
+    color: var(--second-color);
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header-action__btn {
+    --height: 50px;
+
+    min-width: 118px;
+    border: 1px solid rgba(0, 9, 88, 0.7);
 }
