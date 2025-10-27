@@ -594,6 +594,7 @@ a {
     margin-top: 71px;
     display: grid;
     grid-template-columns: auto 1fr auto;
+    column-gap: 70px;
 }
 
 .service-item {
@@ -637,4 +638,43 @@ a {
 .service-item__more::after {
     content: url(../icons/arrow-up-right.svg);
     margin-top: 3px;
+}
+
+.service__media {
+    position: relative;
+    margin-top: 18px;
+}
+
+.service__media::after {
+    content: "";
+    height: 350px;
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 0;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #9DF1FB 0%, #73D0DB 108.14%);
+}
+
+.service__img {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.service__cta-wrap {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.service__cta {
+    min-width: 214px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    transition: box-shadow .25s ease;
+}
+
+.service__cta:hover {
+    box-shadow: 0 13px 26px -8px rgba(255, 91, 46, 0.42);
 }
