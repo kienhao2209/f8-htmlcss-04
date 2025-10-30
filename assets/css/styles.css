@@ -1003,7 +1003,7 @@ a {
 .review__inner {
     display: flex;
     align-items: center;
-    column-gap: 44px;
+    column-gap: 45px;
 }
 
 .review__control {
@@ -1028,10 +1028,20 @@ a {
     border-color: var(--primary-color);
 }
 
+.review__content {
+    overflow: hidden;
+}
+
+.review__list {
+    display: flex;
+}
+
 .review-item {
     display: flex;
     align-items: center;
     column-gap: 115px;
+    width: 100%;
+    flex-shrink: 0;
 }
 
 .review-item__media {
