@@ -1125,3 +1125,30 @@ a {
     background: var(--primary-color);
     border-radius: 99px;
 }
+
+/* Blog */
+.blog {
+    padding: 77px 0;
+}
+
+.blog__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog__info {
+    width: 350px;
+    margin-right: 74px;
+}
+
+.blog__desc {
+    margin-top: 0;
+}
+
+.blog__cta {
+    margin-top: 24px;
+    min-width: 182px;
+    border: 1px solid rgb(255 91 46 / 60%);
+    color: var(--primary-color);
+}
