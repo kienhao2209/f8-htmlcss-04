@@ -909,8 +909,8 @@ a {
 }
 
 .pricing__body {
-    padding: 0 99px;
     margin-top: 56px;
+    padding: 0 99px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 44px;
@@ -920,6 +920,10 @@ a {
     padding: 30px 28px 43px;
     background: #fff;
     border-radius: 20px;
+    transition: box-shadow .25s ease;
+}
+
+.pricing-item:hover {
     box-shadow: 0 20px 44px 0 rgba(195, 108, 22, 0.06);
 }
 
@@ -951,7 +955,7 @@ a {
     --height: 44px;
 
     margin-top: 22px;
-    min-width: 246px;
+    width: 100%;
     border: 1px solid rgba(255, 91, 46, 0.60);
     color: var(--primary-color);
     font-weight: 500;
